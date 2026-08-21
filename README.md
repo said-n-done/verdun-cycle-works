@@ -12,3 +12,5 @@ vercel dev
 
 Needs `DATABASE_URL` (Neon connection string) and `ADMIN_TOKEN` set -- both are
 injected by the Vercel Neon Marketplace integration / project env vars in production.
+
+CI: html-validate + api-syntax on every PR. Auto-merge enabled once required checks pass.
