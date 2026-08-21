@@ -1,0 +1,19 @@
+/* 2023 refresh -- seasonal tune-up promo + a smaller nav CTA button.
+   Loaded after main.css on every page. */
+
+.promo-banner {
+  background: #ead9ac;
+  padding: 20px 24px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+.promo-banner h2 {
+  margin-top: 0;
+}
+
+/* Just for the "Book a tune-up" link in the nav -- keep it compact. */
+.btn {
+  padding: 5px 12px;
+  font-size: 12px;
+}

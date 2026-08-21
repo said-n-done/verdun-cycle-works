@@ -1,0 +1,131 @@
+/* Verdun Cycle Works - main stylesheet, 2019 build.
+   Leaving .header-old in place -- Marc wanted to keep the option of going
+   back to the old banner look for the shop anniversary. Never happened. */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #23241f;
+  background: #f4f4f0;
+}
+
+a {
+  color: #1c5d3b;
+}
+
+.header-old {
+  background: #17301f;
+  color: #fff;
+  padding: 32px 0;
+  text-align: center;
+  border-bottom: 3px solid #d9a441;
+}
+
+.site-header {
+    background: #1c5d3b;
+    color: #f4f4f0;
+    padding: 18px 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header .brand {
+  font-size: 26px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.site-header nav a {
+  color: #f4f4f0;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #d9a441;
+  color: #23241f;
+  padding: 10px 22px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.btn_primary {
+  display: inline-block;
+  background: #d9a441;
+  color: #23241f;
+  padding: 6px 14px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.hours {
+  background: #e6e6dd;
+  padding: 16px 20px;
+  border-radius: 4px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.product-card h3 {
+  margin-top: 0;
+}
+
+.admin-form label {
+  display: block;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.admin-form input, .admin-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: inherit;
+}
+
+footer {
+  background: #17301f;
+  color: #c8d3c8;
+  padding: 24px;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer a {
+  color: #c8d3c8;
+}

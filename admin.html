@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Admin - Verdun Cycle Works</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/override.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="brand">Verdun Cycle Works</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Manage products</h1>
+
+    <div id="admin-gate">
+      <label for="admin-token">Admin token</label>
+      <input type="password" id="admin-token" placeholder="Enter admin token" autocomplete="current-password">
+      <button type="button" class="btn-primary" id="admin-unlock">Unlock</button>
+    </div>
+
+    <div id="admin-panel" hidden>
+      <h2>Add a product</h2>
+      <form id="product-form" class="admin-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+
+        <label for="price">Price (CAD)</label>
+        <input type="number" id="price" step="0.01" min="0" required>
+
+        <label for="description">Description</label>
+        <textarea id="description" rows="3"></textarea>
+
+        <p><button type="submit" class="btn-primary">Save product</button></p>
+      </form>
+
+      <h2>Current products</h2>
+      <div id="admin-list"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Verdun Cycle Works &middot; 3690 rue Wellington &middot; (514) 555-0192</p>
+    <p>Mon&ndash;Fri 10am&ndash;7pm &middot; Sat 10am&ndash;5pm &middot; Sun closed</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
